@@ -50,7 +50,7 @@ int main() {
             {
                 cout << "Door " << shown << " was shown to not have the prize." << endl;
 
-                if(switchDoors && watch)
+                if(switchDoors)
                     cout  << "You switched to Door " << 3 - (shown+choice)%3 << endl;
 
                 cout << "Door " << prize << " had the prize, so you ";
@@ -64,7 +64,7 @@ int main() {
         }
         cout << endl << "You won " << totalWins << " games out of " << iter << endl;
 
-        cout << endl << "Simulate again? (y/n) ";
+        cout << endl << "Simulate again? (y/n)";
         cin >> again;
 
     } while (again == "y" || again == "yes");
